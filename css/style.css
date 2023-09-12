@@ -38,7 +38,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.wrapper .header .nav-bar ul {
+.wrapper .header .nav-bar .nav-items {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -55,10 +55,10 @@
   padding: 0 30%;
   margin-top: 3%;
 }
-.wrapper .header .nav-bar ul li {
+.wrapper .header .nav-bar .nav-items .nav-btn {
   list-style: none;
 }
-.wrapper .header .nav-bar ul li a {
+.wrapper .header .nav-bar .nav-items .nav-btn .btn {
   color: black;
   text-decoration: none;
   margin: 0 15px;
