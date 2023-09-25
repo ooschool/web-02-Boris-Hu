@@ -6,35 +6,714 @@
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/normalize.css" />
         <link rel="stylesheet" href="./css/all.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
         <script src="https://kit.fontawesome.com/ee56040967.js" crossorigin="anonymous"></script>
         <title>Birdy Edge</title>
     </head>
     <body>
         <div class="wrapper">
             <!-- header start -->
-            <div class="header">
+
+            <div id="header" class="header">
                 <div class="logo-wrapper">
                     <div class="logo-img">
-                        <img src="./element/be_logo_l.jpg" alt="" class="logo" />
+                        <img src="./element/be_logo_l.jpg" alt="" id="logo" class="logo" />
                     </div>
                     <div class="icon-buttons">
-                        <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
-                        <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-                        <a class="LINE-icon">LINE</a>
+                        <div class="search-icon">
+                            <a href="#!"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></a>
+                        </div>
+                        <div class="cart-icon">
+                            <a href="#!"><i class="fa-solid fa-cart-shopping fa-2xl"></i></a>
+                        </div>
+
+                        <div class="line-btn">
+                            <a href="#!" class="line-icon"><p class="line-text">LINE</p></a>
+                        </div>
                     </div>
                 </div>
                 <div class="nav-bar">
                     <ul class="nav-items">
-                        <li class="nav-btn"><a class="btn" href="#">首頁</a></li>
-                        <li class="nav-btn"><a class="btn" href="./pages/video.html" target="_blank">影片</a></li>
-                        <li class="nav-btn"><a class="btn" href="./pages/product.html" target="_blank">產品目錄</a></li>
-                        <li class="nav-btn"><a class="btn" href="./pages/store.html" target="_blank">實體門市</a></li>
+                        <li class="nav-btn"><a class="link-btn" href="#">首頁</a></li>
+                        <li class="nav-btn"><a class="link-btn" href="./pages/video.html" target="_self">影片</a></li>
                         <li class="nav-btn">
-                            <a class="btn" href="https://www.facebook.com/Birdyedge2" target="_blank">Facebook</a>
+                            <a class="link-btn" href="./pages/product.html" target="_self">產品目錄</a>
+                        </li>
+                        <li class="nav-btn">
+                            <a class="link-btn" href="./pages/store.html" target="_self">實體門市</a>
+                        </li>
+                        <li class="nav-btn">
+                            <a class="link-btn" href="https://www.facebook.com/Birdyedge2" target="_blank">Facebook</a>
                         </li>
                     </ul>
                 </div>
             </div>
+
+            <!-- header end -->
+
+            <!-- background start -->
+
+            <div class="background">
+                <iframe
+                    width="100%"
+                    height="839px"
+                    src="https://www.youtube.com/embed/e00KDjqtc3w?rel=1&autoplay=1&mute=1&loop=1&playlist=e00KDjqtc3w&showinfo=0&wmode=transparent&controls=0&enablejsapi=1&origin=https://www.birdyedge2.com"
+                    title="洛克X BIRDYEDGE電動滑板車G3X  台灣發布"
+                    frameborder="0"
+                    allow="autoplay"
+                ></iframe>
+                <div class="cover-video"></div>
+                <div class="desc">
+                    <h2 class="title">BIRDYEDGE DESIGN 公告</h2>
+                    <div class="description-content">
+                        <p class="content-desc">BIRDYEDGE</p>
+                        <p class="content-desc">全台最強皆有提供實體店面服務</p>
+                        <p class="content-desc">維修保養通通有!</p>
+                        <p class="content-desc">每一批製作的產品多少會有落差</p>
+                        <p class="content-desc">詳細車子介紹以實體為主！</p>
+                        <p class="content-desc">歡迎來店,參觀與選購</p>
+                        <p class="content-desc">原物料上漲,目前BIRDYEDGE皆無調漲價格</p>
+                        <p class="content-desc">目前刷卡分期服務 3/6/12期為部分負擔手續費</p>
+
+                        <p class="date">2023/6/10</p>
+                    </div>
+                </div>
+            </div>
+            <!-- background end -->
+
+            <!-- Product card start -->
+
+            <div class="container">
+                <div class="section-intro">
+                    <div class="card-main-title">
+                        <h2>電動滑板車系列</h2>
+                    </div>
+                    <div class="card-second-title">
+                        <p>Checkout our products</p>
+                    </div>
+                </div>
+                <div id="product-card-container" class="row">
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="section-intro">
+                    <div class="card-main-title">
+                        <h2>電動腳踏車系列</h2>
+                    </div>
+                    <div class="card-second-title">
+                        <p>Checkout our products</p>
+                    </div>
+                </div>
+                <div id="product-card-container" class="row">
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="section-intro">
+                    <div class="card-main-title">
+                        <h2>迷你電動滑板系列</h2>
+                    </div>
+                    <div class="card-second-title">
+                        <p>Checkout our products</p>
+                    </div>
+                </div>
+                <div id="product-card-container" class="row">
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col4-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="section-intro">
+                    <div class="card-main-title">
+                        <h2>攜帶型電動滑板</h2>
+                    </div>
+                    <div class="card-second-title">
+                        <p>Checkout our products</p>
+                    </div>
+                </div>
+                <div id="product-card-container" class="row">
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="section-intro">
+                    <div class="card-main-title">
+                        <h2>玩家級電動滑板</h2>
+                    </div>
+                    <div class="card-second-title">
+                        <p>Checkout our products</p>
+                    </div>
+                </div>
+                <div id="product-card-container" class="row">
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="section-intro">
+                    <div class="card-main-title">
+                        <h2>專家級電動滑板</h2>
+                    </div>
+                    <div class="card-second-title">
+                        <p>Checkout our products</p>
+                    </div>
+                </div>
+                <div id="product-card-container" class="row">
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="section-intro">
+                    <div class="card-main-title">
+                        <h2>可拆卸電動滑板</h2>
+                    </div>
+                    <div class="card-second-title">
+                        <p>Checkout our products</p>
+                    </div>
+                </div>
+                <div id="product-card-container" class="row">
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="section-intro">
+                    <div class="card-main-title">
+                        <h2>無動力技術板</h2>
+                    </div>
+                    <div class="card-second-title">
+                        <p>Checkout our products</p>
+                    </div>
+                </div>
+                <div id="product-card-container" class="row">
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="section-intro">
+                    <div class="card-main-title">
+                        <h2>配件系列</h2>
+                    </div>
+                    <div class="card-second-title">
+                        <p>Checkout our products</p>
+                    </div>
+                </div>
+                <div id="product-card-container" class="row">
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                    <div class="col3-lg">
+                        <div class="img-container">
+                            <div class="img"></div>
+                        </div>
+                        <div class="card-text">
+                            <h2>滑板車</h2>
+                            <p>NT$ 100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product card end -->
+
+            <!-- Footer Start -->
+
+            <div id="footer" class="container">
+                <div class="row">
+                    <div class="col2-lg left-section">
+                        <h1 class="selling-point">擴點徵求</h1>
+                        <p class="selling-desc">
+                            台灣已經擁有12間實體經銷實體門市
+                            <br />
+                            歡迎加入我們的行列,加盟專線0926393873
+                        </p>
+                        <a href="#!" class="contact"><p class="contact-text">歡迎聯繫點選</p></a>
+                    </div>
+                    <div class="col2-lg right-section">
+                        <div class="footer-bg">
+                            <div class="img-container">
+                                <div class="img"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Start -->
         </div>
     </body>
+
+    <script src="./app.js"></script>
 </html>
