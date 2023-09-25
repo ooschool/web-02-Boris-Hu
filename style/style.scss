@@ -1,4 +1,23 @@
-// Global Settings \\
+/*
+ *Page name
+ *Copyright 2023
+ *Author Boris Hu
+*/
+
+/*------------------*\
+    Content
+\*------------------*/
+
+/**
+ *Content ...........You are reading it!
+ *Global  ...........Set Common Styles
+ *Layout  ...........Set Grid
+ *Component .........Set Component Styles
+ */
+
+/*------------------*\
+    Global
+\*------------------*/
 
 * {
     position: relative;
@@ -7,11 +26,162 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    font-family: 'Microsoft JhengHei', Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/*------------------*\
+    Layout
+\*------------------*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+.row {
+    margin: 0 -16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col1-lg,
+.col2-lg,
+.col3-lg,
+.col4-lg {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+.col1-lg {
+    width: 100%;
+}
+
+.col2-lg {
+    width: 50%;
+}
+
+.col3-lg {
+    width: 30%;
+}
+.col4-lg {
+    width: 25%;
+}
+
+/*------------------*\
+    Component
+\*------------------*/
+
+// Image
+
+.img-container {
+    width: 100%;
+}
+.img-container::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+    width: 100%;
+}
+.img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+// Button
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.5rem;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5rem;
+    // opacity: 0;
+    transition: all 0.5s;
+}
+.btn:hover {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+// RWD
+
+@media screen and (max-width: 768px) {
+    .col1-md {
+        width: 100%;
+    }
+
+    .col2-md {
+        width: 50%;
+    }
+
+    .col3-md {
+        width: 33.333333%;
+    }
+    .col4-md {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .col1-sm {
+        width: 100%;
+    }
+
+    .col2-sm {
+        width: 50%;
+    }
+
+    .col3-sm {
+        width: 33.333333%;
+    }
+    .col4-sm {
+        width: 25%;
+    }
+}
+
 // Logo Start
 
 .wrapper {
+    /* Header style start */
     .header {
         margin-top: 2.5%;
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        transition: all 0.5s ease;
         // border: 1px solid black;
         .logo-wrapper {
             width: 75%;
@@ -34,25 +204,217 @@
                 display: flex;
                 justify-content: space-between;
                 // border: 2px solid green;
+
+                .search-icon,
+                .cart-icon {
+                    transform: translate(0, 30%);
+                    margin-left: 10%;
+                }
+                .line-btn {
+                    margin-left: 10%;
+                    cursor: pointer;
+                    padding: 8% 20%;
+                    border: 2px solid green;
+                    border-radius: 5rem;
+
+                    .line-text {
+                        font-size: 1.5rem;
+                        font-weight: bolder;
+                        color: green;
+                    }
+                }
             }
         }
         .nav-bar {
-            // border: 1px solid green;
+            margin-bottom: 3%;
             .nav-items {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                padding: 0 30%;
+                padding: 0 35%;
                 margin-top: 3%;
+
                 .nav-btn {
                     list-style: none;
-                    .btn {
+                    .link-btn {
                         color: black;
                         text-decoration: none;
-                        margin: 0 15px;
+                        padding: 0.5rem;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Header style end */
+
+    /* Background style start */
+
+    .background {
+        width: 100%;
+        margin-top: 1rem;
+        border: 1px solid black;
+
+        .desc {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            font-family: '微軟正黑體';
+            .title {
+                font-size: 2.5rem;
+            }
+            .content-desc {
+                margin-top: 5%;
+                font-size: 1.5rem;
+            }
+            .date {
+                margin-top: 5%;
+                font-size: 0.5rem;
+            }
+        }
+        .cover-video {
+            width: 100%;
+            height: 840px;
+            background: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    /* Background style end */
+
+    /* Product card stlye start */
+
+    .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        .section-intro {
+            text-align: center;
+            .card-main-title {
+                font-size: 1.5rem;
+            }
+            .card-second-title {
+                margin-top: 1.5%;
+                font-size: 1rem;
+            }
+        }
+        #product-card-container {
+            // border: 1px solid blue;
+            margin-top: 3%;
+            .col4-lg {
+                width: 23%;
+            }
+            .col3-lg {
+                width: 31%;
+            }
+            .col4-lg,
+            .col3-lg {
+                margin-right: 1%;
+                margin-left: 1%;
+                margin-top: 5%;
+                // border: 1px solid green;
+                cursor: pointer;
+                .img-container {
+                    transition: all 0.5s;
+                    .img {
+                        background-image: url('../element/product.jpg');
+                    }
+                }
+                .img-container:hover {
+                    opacity: 0.3;
+                }
+
+                .img-container::before {
+                    padding-top: 75%;
+                }
+
+                .card-text {
+                    margin-top: 5%;
+                    text-align: center;
+                    h2,
+                    p {
+                        font-size: 1.5rem;
+                        font-weight: bolder;
+                        margin-top: 3%;
+                    }
+                    p {
+                        color: darkgray;
+                    }
+                }
+            }
+        }
+    }
+
+    #footer {
+        max-width: 100%;
+        background-color: black;
+
+        .row {
+            .col2-lg {
+                color: white;
+                text-align: center;
+                padding: 0;
+                .selling-point {
+                    font-weight: 500;
+                }
+
+                .selling-desc {
+                    margin-top: 5%;
+                }
+                .contact {
+                    .contact-text {
+                        display: inline-block;
+                        padding: 2%;
+                        border-radius: 5rem;
+                        margin-top: 8%;
+                        color: white;
+                        border: 2px solid white;
+                        transition: all 0.3s;
+                    }
+                }
+                .contact-text:hover {
+                    color: darkgray;
+                    border: 2px solid darkgray;
+                }
+            }
+            .left-section {
+                padding-left: 20%;
+            }
+            .right-section {
+                padding-right: 20%;
+            }
+
+            .col2-lg {
+                .footer-bg {
+                    .img-container {
+                        .img {
+                            background-image: url('../element/footer-logo.jpg');
+                        }
+                    }
+                    .img-container::before {
+                        padding-top: 50%;
                     }
                 }
             }
         }
     }
 }
+
+// .img-container:hover::after {
+//     content: '立即購買';
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, 50%);
+//     display: block;
+//     font-size: 2rem;
+//     border: 1px solid black;
+//     border-radius: 1rem;
+// }
+// .img:hover {
+//     opacity: 0.3;
+// }
